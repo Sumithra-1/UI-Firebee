@@ -1,0 +1,228 @@
+.carousel-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px; /* Space between carousel and pagination */
+}
+
+.carousel-pagination-item {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.carousel-pagination-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.carousel-item {
+  height: 100% !important;
+  position: relative;
+  transition: all 3s ease;
+}
+.carousel-pagination-item.active img {
+  padding-bottom: 3px;
+}
+.carousel-pagination-item.active {
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #a34d9f 0%, #275fd0 100%);
+  border-image-slice: 1;
+  height: 53px;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.carousel-item .carousel-icon,
+.carousel-item .carousel-icon2 {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+.carousel-icon {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  z-index: 10;
+}
+.carousel-inner {
+  height: 500px;
+}
+.carousel-icon2 {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  z-index: 10;
+}
+.product-detail {
+  background-color: #f6f6f6;
+}
+.star-img {
+  width: 150px;
+  height: 40px;
+}
+.price-container {
+  position: relative;
+  display: inline-block;
+}
+
+.price-strike {
+  position: relative;
+}
+
+.price-strike::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 58%;
+  width: 100%;
+  height: 2px;
+  background-color: #e41e31;
+  transform: rotate(-6deg);
+  transform-origin: left center;
+  z-index: 1;
+}
+
+.price-strike {
+  position: relative;
+  z-index: 2;
+}
+.popular-btn {
+  border-radius: 30px;
+  width: 244px;
+  height: 30px;
+  border: none;
+  background: linear-gradient(90deg, #a34d9f 0%, #275fd0 100%);
+}
+
+.card-gradient {
+    position: relative;
+    padding: 2px; 
+    border-radius: 15px; 
+    background: linear-gradient(90deg, #a34d9f 0%, #275fd0 100%);
+  }
+  
+  .card-gradient::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: 2px;
+    background: inherit;
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; 
+            mask-composite: exclude; 
+    z-index: 0;
+  }
+  
+  .card-body {
+    position: relative;
+    border-radius: 13px; 
+    background-color: white; 
+    z-index: 1;
+  }
+.card-body {
+  text-align: left;
+}
+.cart-btn {
+  width: 270px;
+  height: 39px;
+  border-radius: 26px;
+  background-color: #07c961;
+  border: 0;
+}
+.payment-space .col {
+  padding: 2px !important;
+}
+.img-fluid {
+  width: 60px;
+  height: 40px;
+}
+.img-fluid1 {
+  width: 50px;
+  height: 50px;
+}
+.w-150-res {
+  text-align: center;
+}
+.DayImg {
+  width: 150px;
+  height: 150px;
+}
+
+.sec1-space {
+  padding: 45px;
+}
+.signal-img {
+  width: 60px;
+  height: 60px;
+  margin-top: 12px;
+}
+.logo-img {
+  width: 140px;
+  height: 35px;
+}
+.bg-bor-solid {
+  border: 5px solid white;
+}
+.tick-img {
+  height: 22px;
+  width: 22px;
+}
+.tick-img-stroke {
+  height: 27px;
+  width: 27px;
+  margin-left: -2px;
+}
+.book-img {
+  width: 220px;
+  height: 200px;
+  object-fit: cover;
+}
+.pro-image {
+  width: 400px;
+  height: 290px;
+}
+.img-fluidBox {
+  width: 130px;
+  height: 70px;
+  padding: 5px;
+}
+
+.deep-sleep {
+  background: linear-gradient(90deg, #2e034b 0%, #002182 50%, #2e034b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+.alert-gradient {
+  background: linear-gradient(90deg, #ff225e 0%, #9d2ac6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.calm-gradient {
+  background: linear-gradient(90deg, #8bf2b5 0%, #35c8eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.focus-gradient {
+  background: linear-gradient(90deg, #e280da 0%, #6694ef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.happy-gradient {
+  background: linear-gradient(90deg, #a34d9f 0%, #275fd0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

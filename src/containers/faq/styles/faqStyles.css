@@ -1,0 +1,27 @@
+.accordion-button::after,
+.accordion-button::before {
+  display: none;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+.accordion-item {
+  border: none;
+  color:#3F3631 ;
+  text-align: left;
+}
+.accordion-button:not(.collapsed){
+    box-shadow:none;
+}
+.accordion-button:focus{
+    border-color: transparent;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+    color:#3F3631 ;
+}
+.thick-hr {
+    border-top: 2px solid #3F3631;
+    opacity:1;
+    margin-top: 0;
+  }

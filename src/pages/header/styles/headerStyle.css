@@ -1,0 +1,44 @@
+
+.headingTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .HeaderBackground {
+    height: 74px;
+    object-fit: fill;
+    width: -webkit-fill-available;
+  }
+  .navbar-brand img {
+    width: 128px;
+    height: 30px;
+  }
+  .btn-buy-now {
+    background-color: #28a745; 
+    color: white;
+    border-radius: 20px;
+  }
+  .btn-buy-now:hover {
+    background-color: #218838;
+  }
+  .navbar-toggler{
+    border: none !important;
+  }
+  .navbar-toggler:focus {
+    text-decoration: none;
+    box-shadow: none;
+}
+
+ .container-fluid .nav-link{
+    color: #27292D !important;
+ }
+ .profile-icon-container{
+    background-color: #4B93D0;
+    border-radius: 16px;
+    padding: 3px 6px 3px 6px;
+ }
+ .profile-icon-img{
+    width: 16px;
+    height: 16px;
+ }
