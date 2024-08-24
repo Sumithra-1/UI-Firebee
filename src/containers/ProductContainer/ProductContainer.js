@@ -59,7 +59,7 @@ const ProductContainer = () => {
   return (
     <React.Fragment>
       <div className="row product-detail">
-        <div className="col-md-6 col-12 p-0">
+        <div className="col-md-6 col-12 p-3 mt-3">
           <div className="carousel-container">
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
               <div className="carousel-inner">

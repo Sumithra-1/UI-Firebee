@@ -47,7 +47,7 @@
 }
 .carousel-icon {
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 10px;
   z-index: 10;
 }
@@ -56,7 +56,7 @@
 }
 .carousel-icon2 {
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 90px;
   z-index: 10;
 }
@@ -158,6 +158,10 @@
   width: 150px;
   height: 150px;
 }
+.DayImg1 {
+  width: 150px;
+  height: 150px;
+}
 
 .sec1-space {
   padding: 45px;
@@ -222,4 +226,7 @@
   background: linear-gradient(90deg, #a34d9f 0%, #275fd0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.w-fill-avail{
+  width: -webkit-fill-available !important;
 }

@@ -125,7 +125,7 @@ const SectionTwoContainer = () => {
               <div className="w-150-res">
                 <img
                   src={section.image}
-                  className="text-center DayImg w-auto"
+                  className="text-center DayImg1"
                   alt="pay1"
                 />
               </div>
@@ -167,7 +167,7 @@ const SectionTwoContainer = () => {
             <div className="w-150-res">
               <img
                 src={SignalBackground}
-                className="text-center DayImg w-auto"
+                className="text-center DayImg w-fill-avail"
                 alt="pay1"
               />
             </div>
