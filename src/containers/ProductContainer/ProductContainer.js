@@ -1,5 +1,8 @@
+/* External package import */
 import React, { useState } from "react";
-import "./styles/productContainerStyle.css";
+/* External package import */
+
+/* internal file import */
 import Slider1 from "../../assets/images/Slider1.png";
 import Slider2 from "../../assets/images/Slider2.jpg";
 import Slider3 from "../../assets/images/Slider3.jpg";
@@ -19,7 +22,13 @@ import GuaranteeBlack from "../../assets/images/GuaranteeBlack.png";
 import Shipping from "../../assets/images/Shipping.svg";
 import SIGNAL from "../../assets/images/SIGNAL.png";
 import CoustomerCare from "../../assets/images/CoustomerCare.png";
+/* internal file import */
 
+/* custom styles */
+import "./styles/productContainerStyle.css";
+/* custom styles */
+
+/* Global data */
 const slides = [
   { src: Slider1, alt: "Slide 1" },
   { src: Slider2, alt: "Slide 2" },
@@ -38,6 +47,7 @@ const guarantees = [
 ];
 
 const paymentMethods = [VISA, MasterCard, AmericanExpress, Maestro, PayPal, Affirm];
+/* Global data */
 
 const ProductContainer = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -49,7 +59,7 @@ const ProductContainer = () => {
   return (
     <React.Fragment>
       <div className="row product-detail">
-        <div className="col-md-6 col-12 p-3 mt-1">
+        <div className="col-md-6 col-12 p-0">
           <div className="carousel-container">
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
               <div className="carousel-inner">
@@ -58,7 +68,7 @@ const ProductContainer = () => {
                     {carouselIcons.map((icon, i) => (
                       <img key={i} src={icon} className={`carousel-icon${i === 0 ? '2' : ''}`} alt={i === 0 ? 'FC' : 'ICNIRP'} />
                     ))}
-                    <img src={slide.src} className="d-block w-100" alt={slide.alt} />
+                    <img src={slide.src} className="d-block slideImage" alt={slide.alt} />
                   </div>
                 ))}
               </div>

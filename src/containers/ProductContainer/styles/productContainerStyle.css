@@ -1,7 +1,7 @@
 .carousel-pagination {
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
   margin-top: 10px; /* Space between carousel and pagination */
 }
 
@@ -13,8 +13,8 @@
 }
 
 .carousel-pagination-item img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
 }
 
@@ -26,14 +26,14 @@
 .carousel-pagination-item.active img {
   padding-bottom: 3px;
 }
+
 .carousel-pagination-item.active {
   border-bottom: 3px solid transparent;
   border-image: linear-gradient(90deg, #a34d9f 0%, #275fd0 100%);
   border-image-slice: 1;
-  height: 53px;
 }
-.carousel-item img {
-  width: 100%;
+.carousel-item .slideImage {
+  width: -webkit-fill-available !important;
   height: 100%;
   object-fit: contain;
   display: block;
@@ -102,36 +102,34 @@
 }
 
 .card-gradient {
-    position: relative;
-    padding: 2px; 
-    border-radius: 15px; 
-    background: linear-gradient(90deg, #a34d9f 0%, #275fd0 100%);
-  }
-  
-  .card-gradient::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 15px;
-    padding: 2px;
-    background: inherit;
-    -webkit-mask: 
-      linear-gradient(#fff 0 0) content-box, 
-      linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor; 
-            mask-composite: exclude; 
-    z-index: 0;
-  }
-  
-  .card-body {
-    position: relative;
-    border-radius: 13px; 
-    background-color: white; 
-    z-index: 1;
-  }
+  position: relative;
+  padding: 2px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #a34d9f 0%, #275fd0 100%);
+}
+
+.card-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  padding: 2px;
+  background: inherit;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 0;
+}
+
+.card-body {
+  position: relative;
+  border-radius: 13px;
+  background-color: white;
+  z-index: 1;
+}
 .card-body {
   text-align: left;
 }
@@ -204,7 +202,6 @@
   background: linear-gradient(90deg, #2e034b 0%, #002182 50%, #2e034b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
 }
 .alert-gradient {
   background: linear-gradient(90deg, #ff225e 0%, #9d2ac6 100%);

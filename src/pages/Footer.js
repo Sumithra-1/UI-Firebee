@@ -1,6 +1,11 @@
+/* External package import */
 import React from "react";
+/* External package import */
+
+/* internal file import */
 import FireBeeWhite from "../assets/images/FireBeeWhite.png";
 import FooterBackground from "../assets/images/FooterBackground.png";
+/* internal file import */
 
 const Footer = () => {
   const footerData = {
@@ -46,7 +51,7 @@ const Footer = () => {
         backgroundImage: `url(${FooterBackground})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        padding: "20px"
+        padding: "20px",
       }}
     >
       <div className="container">

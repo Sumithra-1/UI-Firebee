@@ -1,5 +1,8 @@
+/* External package import */
 import React from "react";
-import "./styles/productContainerStyle.css";
+/* External package import */
+
+/* internal file import */
 import Guarantee from "../../assets/images/Guarantee.png";
 import SignalBackground from "../../assets/images/SignalBackground.png";
 import BedTime from "../../assets/images/BedTime.png";
@@ -20,7 +23,13 @@ import TheNewYorkTimes from "../../assets/images/TheNewYorkTimes.png";
 import Mashable from "../../assets/images/Mashable.png";
 import CNN from "../../assets/images/CNN.png";
 import TheWallStreetJournal from "../../assets/images/TheWallStreetJournal.png";
+/* internal file import */
 
+/* custom styles */
+import "./styles/productContainerStyle.css";
+/* custom styles */
+
+/* static json data */
 const data = {
   sections: [
     {
@@ -104,6 +113,7 @@ const data = {
     TheWallStreetJournal,
   ],
 };
+/* static json data */
 
 const SectionTwoContainer = () => {
   return (

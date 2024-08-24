@@ -1,16 +1,25 @@
+/* External package import */
 import React from "react";
+/* External package import */
+
+/* internal file import */
 import HeaderBackground from "../../assets/images/HeaderBackground.png";
 import FireBeeBlue from "../../assets/images/FireBeeBlue.svg";
 import Profile from "../../assets/images/Login.png";
+/* internal file import */
 
+/* custom styles */
 import "./styles/headerStyle.css";
+/* custom styles */
 
+/* static json data */
 const navItems = [
   { name: "How It Works", href: "#" },
   { name: "Signals", href: "#" },
   { name: "Reviews", href: "#" },
   { name: "Blog", href: "#" },
 ];
+/* static json data */
 
 const Header = () => {
   return (

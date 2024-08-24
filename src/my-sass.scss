@@ -1,20 +1,20 @@
 $bgBlue: #134358;
 $colorWhite: #ffffff;
-$color-grey:#737373;
-$color-green: #07C961;
-$primary-grey:#27292D;
-$primary-black: #3F3631;
+$primary-grey: #27292d;
+$primary-black: #3f3631;
+
 .HeaderBackground {
   background-color: $bgBlue;
 }
+
 .color-white {
   color: $colorWhite !important;
 }
-.primary-color-grey{
+
+.primary-color-grey {
   color: $primary-grey !important;
-
 }
-.primary-color-black{
-  color: $primary-black !important;
 
+.primary-color-black {
+  color: $primary-black !important;
 }

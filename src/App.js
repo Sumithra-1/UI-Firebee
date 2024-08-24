@@ -1,12 +1,16 @@
-// import logo from './logo.svg';
-import './App.css';
-import ProductListPage from './pages/ProductViewPage';
-import './my-sass.scss';
+/* internal file import */
+import ProductListPage from "./pages/ProductViewPage";
+/* internal file import */
+
+/* custom styles */
+import "./my-sass.scss";
+import "./App.css";
+/* custom styles */
+
 function App() {
   return (
     <div className="App">
-     
-        <ProductListPage/>
+      <ProductListPage />
     </div>
   );
 }

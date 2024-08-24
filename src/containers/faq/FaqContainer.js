@@ -1,5 +1,10 @@
+/* External package import */
 import React, { useState } from "react";
+/* External package import */
+
+/* custom styles */
 import "./styles/faqStyles.css";
+/* custom styles */
 
 const FaqContainer = () => {
   const faqData = [
@@ -34,9 +39,9 @@ const FaqContainer = () => {
 
   const toggleActiveKey = (key) => {
     if (activeKey === key) {
-      setActiveKey(null); // Close the currently active accordion
+      setActiveKey(null); 
     } else {
-      setActiveKey(key); // Open the clicked accordion
+      setActiveKey(key); 
     }
   };
 
@@ -46,7 +51,7 @@ const FaqContainer = () => {
   return (
     <div className="bg-sesction2 w-100">
       <div className=" mt-3  container-space-faq">
-        <h3  className="font-weight-normal mb-4">Frequently Asked Questions</h3>
+        <h3 className="font-weight-normal mb-4">Frequently Asked Questions</h3>
         <div className="accordion" id="faqAccordion">
           {faqData.map((item) => (
             <div className="accordion-item" key={item.id}>
